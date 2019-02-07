@@ -1,37 +1,46 @@
+<!DOCTYPE html>
 <html>
-		<head>
-			<title>Starbuzz Coffee</title>
-			<style type="text/css">
-				body {
-					background-color: #d2b48c;
-					margin-left: 20%;
-					margin-right: 20%;
-					border: 1px dotted gray;
-					padding: 10px 10px 10px 10px;
-					font-family: sans-serif;
-					}
-			</style>
-		</head>		
-		
-		<body>
-				<h1>Jacob's Personal Portfolio</h1>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
 
-				<h2>Skills</h2>
-				<p>saxophone
-			athletics
-			academics
-			basic understanding of computer science</p>
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 900px; /* Should be removed. Only for demonstration */
+}
 
-				<h2>About me</h2>
-				<p>I enjoy snow days
-				I do not enjoy days without snow
-							</p>
-				
-				
-				
-				
-				
-				
-				<a href="mission.html"> Mission </a>
-		</body>
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<h2>Three Equal Columns</h2>
+
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2>About me</h2>
+    <p>My name is Jacob Humpherys</p>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2>I enjoy</h2>
+    <p>sleep</p>
+  </div>
+  <div class="column" style="background-color:#ccc;">
+    <h2>Examples of my work...</h2>
+    <p><a href="mission.html"> Found here </a></p>
+  </div>
+</div>
+
+</body>
 </html>
